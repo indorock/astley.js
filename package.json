@@ -1,9 +1,9 @@
 {
   "name": "astley.js",
-  "version": "0.0.51",
-  "description": "Construct a website from a JSON-LD AST",
-  "homepage": "https://github.com/hanzo-io/astley.js",
-  "repository": "github.com/hanzo-io/astley.js",
+  "version": "0.0.52",
+  "description": "Construct a website from a JSON-LD AST. Forked from https://github.com/hanzo-io/astley.js",
+  "homepage": "https://github.com/indorock/astley.js",
+  "repository": "github.com/indorock/astley.js",
   "bugs": "http://github.com/hanzo-io/astley.js/issues",
   "author": "Hanzo, Inc <hi@hanzo.io>",
   "license": "BSD-3-Clause",
