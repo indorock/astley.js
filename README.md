@@ -1,4 +1,6 @@
-# astley.js
+# astley2.js
+
+(forked from https://github.com/shopjs/astley.js)
 
 Library for rendering a website AST into semantic aware template.  Separate the
 content structure from the template structure to easily transform your website.
@@ -107,6 +109,7 @@ of organizing related menus
   type: basic | button
   # url - menu may be a link itself (usually if no child links)
   url: string
+  target: string
   links: [ WebsiteMenuLink ]
 }
 ```
@@ -130,6 +133,7 @@ WebsiteMenu is a menu which may be a link itself or a menu containing links
   image: string
   # image - link url
   url: string
+  target: string
 }
 ```
 
