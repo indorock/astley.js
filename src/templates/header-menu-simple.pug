@@ -28,10 +28,10 @@ header-menu-simple.nav.simple-menus(itemscope, itemtype='WebsiteHeader')
         else
           div.menu-link-only(itemprop='menus', itemscope, itemtype='WebsiteMenu')
           if menu.type == 'button'
-            a.button(href=menu.url, tabindex=0, itemprop='url', target=link.target)
+            a.button(href=menu.url, tabindex=0, itemprop='url', target=menu.target)
               span(itemprop='name')=menu.name
           else
-            a.fade-on-hover(href=menu.url, tabindex=0, itemprop='url', target=link.target)
+            a.fade-on-hover(href=menu.url, tabindex=0, itemprop='url', target=menu.target)
               span(itemprop='name')=menu.name
 
   if item.menuCollections && item.menuCollections[0]
@@ -54,8 +54,8 @@ header-menu-simple.nav.simple-menus(itemscope, itemtype='WebsiteHeader')
         else
           div.menu-link-only(itemprop='menus', itemscope, itemtype='WebsiteMenu')
           if menu.type == 'button'
-            a.button(href=menu.url, tabindex=0, itemprop='url', target=link.target)
+            a.button(href=menu.url, tabindex=0, itemprop='url', target=menu.target)
               span(itemprop='name')=menu.name
           else
-            a.fade-on-hover(href=menu.url, tabindex=0, itemprop='url', target=link.target)
+            a.fade-on-hover(href=menu.url, tabindex=0, itemprop='url', target=menu.target)
               span(itemprop='name')=menu.name
