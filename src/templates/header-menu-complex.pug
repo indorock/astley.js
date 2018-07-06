@@ -52,7 +52,7 @@ header-menu-complex.nav.complex-menus(itemscope, itemtype='WebsiteHeader')
               .menu-content
                 each link in menu.links
                   .menu-link(itemprop='links', itemscope, itemtype='WebsiteMenuLink')
-                    a(href=link.url, itemprop='url', target=menu.target)
+                    a(href=link.url, itemprop='url', target=link.target)
                       if link.image
                         img.menu-link-icon(src=link.image, alt=link.name, itemprop='image')
                       .menu-link-text
@@ -72,7 +72,7 @@ header-menu-complex.nav.complex-menus(itemscope, itemtype='WebsiteHeader')
               .menu-content
                 each link in menu.links
                   .menu-link(itemprop='links', itemscope, itemtype='WebsiteMenuLink')
-                    a(href=link.url, itemprop='url',  target=menu.target)
+                    a(href=link.url, itemprop='url',  target=link.target)
                       if link.image
                         img.menu-link-icon(src=link.image, alt=link.name, itemprop='image')
                       .menu-link-text
