@@ -22,9 +22,9 @@ header-menu-complex.nav.complex-menus(itemscope, itemtype='WebsiteHeader')
             .menu-title.fade-on-hover=menu.name
         else
           if menu.type == 'button'
-            a.button(href=menu.url, tabindex=0)=menu.name
+            a.button(href=menu.url, tabindex=0, target=menu.target)=menu.name
           else
-            a.fade-on-hover(href=menu.url, tabindex=0)=menu.name
+            a.fade-on-hover(href=menu.url, tabindex=0, target=menu.target)=menu.name
 
   if item.menuCollections && item.menuCollections[0]
     div.center.primary
@@ -39,9 +39,9 @@ header-menu-complex.nav.complex-menus(itemscope, itemtype='WebsiteHeader')
             .menu-title.fade-on-hover=menu.name
         else
           if menu.type == 'button'
-            a.button(href=menu.url, tabindex=0)=menu.name
+            a.button(href=menu.url, tabindex=0, target=menu.target)=menu.name
           else
-            a.fade-on-hover(href=menu.url, tabindex=0)=menu.name
+            a.fade-on-hover(href=menu.url, tabindex=0, target=menu.target)=menu.name
 
   .menu-wrapper(class='{ active: menuToShow }', onmouseleave ='{ hideMenu }')
     if item.menuCollections && item.menuCollections[0]
@@ -52,7 +52,7 @@ header-menu-complex.nav.complex-menus(itemscope, itemtype='WebsiteHeader')
               .menu-content
                 each link in menu.links
                   .menu-link(itemprop='links', itemscope, itemtype='WebsiteMenuLink')
-                    a(href=link.url, itemprop='url')
+                    a(href=link.url, itemprop='url', target=menu.target)
                       if link.image
                         img.menu-link-icon(src=link.image, alt=link.name, itemprop='image')
                       .menu-link-text
@@ -72,7 +72,7 @@ header-menu-complex.nav.complex-menus(itemscope, itemtype='WebsiteHeader')
               .menu-content
                 each link in menu.links
                   .menu-link(itemprop='links', itemscope, itemtype='WebsiteMenuLink')
-                    a(href=link.url, itemprop='url')
+                    a(href=link.url, itemprop='url',  target=menu.target)
                       if link.image
                         img.menu-link-icon(src=link.image, alt=link.name, itemprop='image')
                       .menu-link-text

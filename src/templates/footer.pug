@@ -10,7 +10,7 @@ if item.menuCollections && item.menuCollections[0]
                 .menu-content
                   each link in menu.links
                     .menu-link(itemprop='links', itemscope, itemtype='WebsiteMenuLink')
-                      a.fade-on-hover(href=link.url, tabindex=0, itemprop='url')
+                      a.fade-on-hover(href=link.url, tabindex=0, itemprop='url', target=link.target)
                         .menu-link-text
                           .menu-link-name(itemprop='name')=link.name
           else
